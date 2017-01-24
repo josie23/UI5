@@ -1,10 +1,11 @@
-<mvc:View controllerName="SAPUI5BootCampUI5.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns="sap.m">
-	<App>
-		<pages>
-			<Page title="{i18n>title}">
-				<content></content>
-			</Page>
-		</pages>
-	</App>
+
+<mvc:View controllerName="SAPUI5BootCamp.controller.APP" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	-
+	<VBox>
+		<Text text="Username"/>
+		<Input id="username" width="50%" valueLiveUpdate="true" description="Hello {/field/username}" type="Text" value="{/field/username}"/>
+		<Text text="Password"/>
+		<Input id="password" width="50%" type="Password"/>
+		<Button text="{i18n>loginButtonText}" press="onLoginPress"/>
+	</VBox>
 </mvc:View>
